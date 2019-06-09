@@ -1,0 +1,35 @@
+{
+    "name": "phpackage/autodns-php-sdk",
+    "description": "InterNetX Domain Robot JSON API SDK",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manuel Mendoza",
+            "email": "alejobit@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "rmccue/requests": "^1.7",
+        "symfony/serializer": "^4.3",
+        "symfony/property-access": "^4.3",
+        "symfony/property-info": "^4.3"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.11.8",
+        "squizlabs/php_codesniffer": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpackage\\Autodns\\": "src/"
+        }
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse -l 7 src/",
+        "test": [
+            "phpcs",
+            "@phpstan"
+        ]
+    }
+}
