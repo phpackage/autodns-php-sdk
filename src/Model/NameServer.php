@@ -5,12 +5,12 @@ namespace Phpackage\Autodns\Model;
 class NameServer
 {
     /**
-     * @var string
+     * @var string|null
      */
     private $name;
 
     /**
-     * @var int
+     * @var int|null
      */
     private $ttl;
 
@@ -20,9 +20,9 @@ class NameServer
     private $ipAddresses = [];
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -36,9 +36,9 @@ class NameServer
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getTtl(): int
+    public function getTtl(): ?int
     {
         return $this->ttl;
     }

@@ -7,42 +7,42 @@ use DateTimeInterface;
 class Domain
 {
     /**
-     * @var DateTimeInterface
+     * @var DateTimeInterface|null
      */
     private $created;
 
     /**
-     * @var DateTimeInterface
+     * @var DateTimeInterface|null
      */
     private $updated;
 
     /**
-     * @var BasicUser
+     * @var BasicUser|null
      */
     private $owner;
 
     /**
-     * @var BasicUser
+     * @var BasicUser|null
      */
     private $updater;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $name;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $idn;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $nicMemberLabel;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $registryStatus;
 
@@ -52,99 +52,99 @@ class Domain
     private $nameServers = [];
 
     /**
-     * @var TimePeriod
+     * @var TimePeriod|null
      */
     private $period;
 
     /**
-     * @var bool
+     * @var bool|null
      */
     private $trustee;
 
     /**
-     * @var bool
+     * @var bool|null
      */
     private $privacy;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $authinfo;
 
     /**
-     * @var bool
+     * @var bool|null
      */
     private $domainsafe;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $parking;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $registrarStatus;
 
     /**
-     * @var Contact
+     * @var Contact|null
      */
     private $ownerc;
 
     /**
-     * @var Contact
+     * @var Contact|null
      */
     private $adminc;
 
     /**
-     * @var Contact
+     * @var Contact|null
      */
     private $techc;
 
     /**
-     * @var Contact
+     * @var Contact|null
      */
     private $zonec;
 
     /**
-     * @var DateTimeInterface
+     * @var DateTimeInterface|null
      */
     private $expire;
 
     /**
-     * @var DateTimeInterface
+     * @var DateTimeInterface|null
      */
     private $payable;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $action;
 
     /**
-     * @var bool
+     * @var bool|null
      */
     private $autoDnsSec;
 
     /**
-     * @var bool
+     * @var bool|null
      */
     private $dnssec;
 
     /**
-     * @var bool
+     * @var bool|null
      */
     private $validCertificate;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $cancelationStatus;
 
     /**
-     * @return DateTimeInterface
+     * @return DateTimeInterface|null
      */
-    public function getCreated(): DateTimeInterface
+    public function getCreated(): ?DateTimeInterface
     {
         return $this->created;
     }
@@ -158,9 +158,9 @@ class Domain
     }
 
     /**
-     * @return DateTimeInterface
+     * @return DateTimeInterface|null
      */
-    public function getUpdated(): DateTimeInterface
+    public function getUpdated(): ?DateTimeInterface
     {
         return $this->updated;
     }
@@ -174,9 +174,9 @@ class Domain
     }
 
     /**
-     * @return BasicUser
+     * @return BasicUser|null
      */
-    public function getOwner(): BasicUser
+    public function getOwner(): ?BasicUser
     {
         return $this->owner;
     }
@@ -190,9 +190,9 @@ class Domain
     }
 
     /**
-     * @return BasicUser
+     * @return BasicUser|null
      */
-    public function getUpdater(): BasicUser
+    public function getUpdater(): ?BasicUser
     {
         return $this->updater;
     }
@@ -206,9 +206,9 @@ class Domain
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
@@ -222,9 +222,9 @@ class Domain
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getIdn(): string
+    public function getIdn(): ?string
     {
         return $this->idn;
     }
@@ -238,9 +238,9 @@ class Domain
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getNicMemberLabel(): string
+    public function getNicMemberLabel(): ?string
     {
         return $this->nicMemberLabel;
     }
@@ -254,9 +254,9 @@ class Domain
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getRegistryStatus(): string
+    public function getRegistryStatus(): ?string
     {
         return $this->registryStatus;
     }
@@ -270,9 +270,9 @@ class Domain
     }
 
     /**
-     * @return NameServer[]
+     * @return NameServer[]|null
      */
-    public function getNameServers(): array
+    public function getNameServers(): ?array
     {
         return $this->nameServers;
     }
@@ -294,9 +294,9 @@ class Domain
     }
 
     /**
-     * @return TimePeriod
+     * @return TimePeriod|null
      */
-    public function getPeriod(): TimePeriod
+    public function getPeriod(): ?TimePeriod
     {
         return $this->period;
     }
@@ -310,9 +310,9 @@ class Domain
     }
 
     /**
-     * @return bool
+     * @return bool|null
      */
-    public function isTrustee(): bool
+    public function getTrustee(): ?bool
     {
         return $this->trustee;
     }
@@ -326,9 +326,9 @@ class Domain
     }
 
     /**
-     * @return bool
+     * @return bool|null
      */
-    public function isPrivacy(): bool
+    public function getPrivacy(): ?bool
     {
         return $this->privacy;
     }
@@ -342,9 +342,9 @@ class Domain
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getAuthinfo(): string
+    public function getAuthinfo(): ?string
     {
         return $this->authinfo;
     }
@@ -358,9 +358,9 @@ class Domain
     }
 
     /**
-     * @return bool
+     * @return bool|null
      */
-    public function isDomainsafe(): bool
+    public function isDomainsafe(): ?bool
     {
         return $this->domainsafe;
     }
@@ -374,9 +374,9 @@ class Domain
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getParking(): string
+    public function getParking(): ?string
     {
         return $this->parking;
     }
@@ -390,9 +390,9 @@ class Domain
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getRegistrarStatus(): string
+    public function getRegistrarStatus(): ?string
     {
         return $this->registrarStatus;
     }
@@ -406,9 +406,9 @@ class Domain
     }
 
     /**
-     * @return Contact
+     * @return Contact|null
      */
-    public function getOwnerc(): Contact
+    public function getOwnerc(): ?Contact
     {
         return $this->ownerc;
     }
@@ -422,9 +422,9 @@ class Domain
     }
 
     /**
-     * @return Contact
+     * @return Contact|null
      */
-    public function getAdminc(): Contact
+    public function getAdminc(): ?Contact
     {
         return $this->adminc;
     }
@@ -438,9 +438,9 @@ class Domain
     }
 
     /**
-     * @return Contact
+     * @return Contact|null
      */
-    public function getTechc(): Contact
+    public function getTechc(): ?Contact
     {
         return $this->techc;
     }
@@ -454,9 +454,9 @@ class Domain
     }
 
     /**
-     * @return Contact
+     * @return Contact|null
      */
-    public function getZonec(): Contact
+    public function getZonec(): ?Contact
     {
         return $this->zonec;
     }
@@ -470,9 +470,9 @@ class Domain
     }
 
     /**
-     * @return DateTimeInterface
+     * @return DateTimeInterface|null
      */
-    public function getExpire(): DateTimeInterface
+    public function getExpire(): ?DateTimeInterface
     {
         return $this->expire;
     }
@@ -486,9 +486,9 @@ class Domain
     }
 
     /**
-     * @return DateTimeInterface
+     * @return DateTimeInterface|null
      */
-    public function getPayable(): DateTimeInterface
+    public function getPayable(): ?DateTimeInterface
     {
         return $this->payable;
     }
@@ -502,9 +502,9 @@ class Domain
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getAction(): string
+    public function getAction(): ?string
     {
         return $this->action;
     }
@@ -518,9 +518,9 @@ class Domain
     }
 
     /**
-     * @return bool
+     * @return bool|null
      */
-    public function isAutoDnsSec(): bool
+    public function isAutoDnsSec(): ?bool
     {
         return $this->autoDnsSec;
     }
@@ -534,9 +534,9 @@ class Domain
     }
 
     /**
-     * @return bool
+     * @return bool|null
      */
-    public function isDnssec(): bool
+    public function isDnssec(): ?bool
     {
         return $this->dnssec;
     }
@@ -550,9 +550,9 @@ class Domain
     }
 
     /**
-     * @return bool
+     * @return bool|null
      */
-    public function isValidCertificate(): bool
+    public function isValidCertificate(): ?bool
     {
         return $this->validCertificate;
     }
@@ -566,9 +566,9 @@ class Domain
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getCancelationStatus(): string
+    public function getCancelationStatus(): ?string
     {
         return $this->cancelationStatus;
     }

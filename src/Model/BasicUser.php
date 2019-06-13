@@ -5,19 +5,19 @@ namespace Phpackage\Autodns\Model;
 class BasicUser
 {
     /**
-     * @var int
+     * @var int|null
      */
     private $context;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $user;
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getContext(): int
+    public function getContext(): ?int
     {
         return $this->context;
     }
@@ -31,9 +31,9 @@ class BasicUser
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getUser(): string
+    public function getUser(): ?string
     {
         return $this->user;
     }

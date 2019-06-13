@@ -5,19 +5,19 @@ namespace Phpackage\Autodns\Model;
 class TimePeriod
 {
     /**
-     * @var string
+     * @var string|null
      */
     private $unit;
 
     /**
-     * @var int
+     * @var int|null
      */
     private $period;
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getUnit(): string
+    public function getUnit(): ?string
     {
         return $this->unit;
     }
@@ -34,9 +34,9 @@ class TimePeriod
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getPeriod(): int
+    public function getPeriod(): ?int
     {
         return $this->period;
     }

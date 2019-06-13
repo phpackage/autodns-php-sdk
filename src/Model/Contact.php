@@ -7,77 +7,77 @@ use DateTimeInterface;
 class Contact
 {
     /**
-     * @var DateTimeInterface
+     * @var DateTimeInterface|null
      */
     private $created;
 
     /**
-     * @var DateTimeInterface
+     * @var DateTimeInterface|null
      */
     private $updated;
 
     /**
-     * @var int
+     * @var int|null
      */
     private $id;
 
     /**
-     * @var BasicUser
+     * @var BasicUser|null
      */
     private $owner;
 
     /**
-     * @var BasicUser
+     * @var BasicUser|null
      */
     private $updater;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $alias;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $type;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $organization;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $title;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $city;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $country;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $state;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $email;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $protection;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $sip;
 
@@ -87,32 +87,32 @@ class Contact
     private $remarks;
 
     /**
-     * @var bool
+     * @var bool|null
      */
     private $domainsafe;
 
     /**
-     * @var bool
+     * @var bool|null
      */
     private $confirmOwnerConsent;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $comment;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $verification;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $fname;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $lname;
 
@@ -122,24 +122,24 @@ class Contact
     private $address;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $pcode;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $phone;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $fax;
 
     /**
-     * @return DateTimeInterface
+     * @return DateTimeInterface|null
      */
-    public function getCreated(): DateTimeInterface
+    public function getCreated(): ?DateTimeInterface
     {
         return $this->created;
     }
@@ -153,9 +153,9 @@ class Contact
     }
 
     /**
-     * @return DateTimeInterface
+     * @return DateTimeInterface|null
      */
-    public function getUpdated(): DateTimeInterface
+    public function getUpdated(): ?DateTimeInterface
     {
         return $this->updated;
     }
@@ -169,9 +169,9 @@ class Contact
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getId(): int
+    public function getId(): ?int
     {
         return $this->id;
     }
@@ -185,9 +185,9 @@ class Contact
     }
 
     /**
-     * @return BasicUser
+     * @return BasicUser|null
      */
-    public function getOwner(): BasicUser
+    public function getOwner(): ?BasicUser
     {
         return $this->owner;
     }
@@ -201,9 +201,9 @@ class Contact
     }
 
     /**
-     * @return BasicUser
+     * @return BasicUser|null
      */
-    public function getUpdater(): BasicUser
+    public function getUpdater(): ?BasicUser
     {
         return $this->updater;
     }
@@ -217,9 +217,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getAlias(): string
+    public function getAlias(): ?string
     {
         return $this->alias;
     }
@@ -233,9 +233,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
@@ -249,9 +249,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getOrganization(): string
+    public function getOrganization(): ?string
     {
         return $this->organization;
     }
@@ -265,9 +265,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getTitle(): string
+    public function getTitle(): ?string
     {
         return $this->title;
     }
@@ -281,9 +281,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getCity(): string
+    public function getCity(): ?string
     {
         return $this->city;
     }
@@ -297,9 +297,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getCountry(): string
+    public function getCountry(): ?string
     {
         return $this->country;
     }
@@ -313,9 +313,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getState(): string
+    public function getState(): ?string
     {
         return $this->state;
     }
@@ -329,9 +329,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getEmail(): string
+    public function getEmail(): ?string
     {
         return $this->email;
     }
@@ -345,9 +345,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getProtection(): string
+    public function getProtection(): ?string
     {
         return $this->protection;
     }
@@ -361,9 +361,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getSip(): string
+    public function getSip(): ?string
     {
         return $this->sip;
     }
@@ -393,9 +393,9 @@ class Contact
     }
 
     /**
-     * @return bool
+     * @return bool|null
      */
-    public function isDomainsafe(): bool
+    public function isDomainsafe(): ?bool
     {
         return $this->domainsafe;
     }
@@ -409,9 +409,9 @@ class Contact
     }
 
     /**
-     * @return bool
+     * @return bool|null
      */
-    public function isConfirmOwnerConsent(): bool
+    public function isConfirmOwnerConsent(): ?bool
     {
         return $this->confirmOwnerConsent;
     }
@@ -425,9 +425,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getComment(): string
+    public function getComment(): ?string
     {
         return $this->comment;
     }
@@ -441,9 +441,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getVerification(): string
+    public function getVerification(): ?string
     {
         return $this->verification;
     }
@@ -457,9 +457,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getFname(): string
+    public function getFname(): ?string
     {
         return $this->fname;
     }
@@ -473,9 +473,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getLname(): string
+    public function getLname(): ?string
     {
         return $this->lname;
     }
@@ -505,9 +505,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPcode(): string
+    public function getPcode(): ?string
     {
         return $this->pcode;
     }
@@ -521,9 +521,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getPhone(): string
+    public function getPhone(): ?string
     {
         return $this->phone;
     }
@@ -537,9 +537,9 @@ class Contact
     }
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getFax(): string
+    public function getFax(): ?string
     {
         return $this->fax;
     }
