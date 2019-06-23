@@ -14,18 +14,12 @@ class Request
     /**
      * @var string
      */
-    private $language;
+    private $language = 'en';
 
     /**
      * @var Task[]
      */
     private $task;
-
-    public function __construct(Auth $auth, string $language = 'es')
-    {
-        $this->auth = $auth;
-        $this->language = $language;
-    }
 
     /**
      * @return Auth
