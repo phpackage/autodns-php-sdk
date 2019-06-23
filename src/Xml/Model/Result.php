@@ -5,11 +5,6 @@ namespace Phpackage\Autodns\Xml\Model;
 class Result
 {
     /**
-     * @var Data[]
-     */
-    private $data;
-
-    /**
      * @var Status
      */
     private $status;
@@ -18,22 +13,6 @@ class Result
      * @var Message[]
      */
     private $msg;
-
-    /**
-     * @return Data[]
-     */
-    public function getData(): array
-    {
-        return $this->data;
-    }
-
-    /**
-     * @param Data[] $data
-     */
-    public function setData(array $data): void
-    {
-        $this->data = $data;
-    }
 
     /**
      * @return Status

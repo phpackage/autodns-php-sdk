@@ -1,6 +1,10 @@
 <?php
 
-namespace Phpackage\Autodns\Xml\Model;
+namespace Phpackage\Autodns\Xml\Task;
+
+use Phpackage\Autodns\Xml\Model\Order;
+use Phpackage\Autodns\Xml\Model\View;
+use Phpackage\Autodns\Xml\Model\Where;
 
 class Task
 {

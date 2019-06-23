@@ -2,6 +2,8 @@
 
 namespace Phpackage\Autodns\Xml\Model;
 
+use Phpackage\Autodns\Xml\Task\Task;
+
 class Request
 {
     /**

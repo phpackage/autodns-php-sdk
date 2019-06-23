@@ -20,6 +20,11 @@ class Status
     private $text;
 
     /**
+     * @var SimpleObject
+     */
+    private $object;
+
+    /**
      * @return string
      */
     public function getType(): string
@@ -65,5 +70,21 @@ class Status
     public function setText(string $text): void
     {
         $this->text = $text;
+    }
+
+    /**
+     * @return SimpleObject
+     */
+    public function getObject(): ?SimpleObject
+    {
+        return $this->object;
+    }
+
+    /**
+     * @param SimpleObject $object
+     */
+    public function setObject(SimpleObject $object): void
+    {
+        $this->object = $object;
     }
 }
