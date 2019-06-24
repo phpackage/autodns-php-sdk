@@ -4,6 +4,19 @@ namespace Phpackage\Autodns\Xml\Model;
 
 class User
 {
+    const STATUS_MASTER = 0;
+    const STATUS_ADMIN = 1;
+    const STATUS_NORMAL = 2;
+
+    const SUBSTATUS_PLUS = 0;
+    const SUBSTATUS_STAR = 1;
+    const SUBSTATUS_NORMAL = 2;
+    const SUBSTATUS_CLONE = 3;
+
+    const LANGUAGE_GERMAN = 'de';
+    const LANGUAGE_ENGLISH = 'en';
+    const LANGUAGE_SPANISH = 'es';
+
     /**
      * @var string
      */
@@ -17,12 +30,12 @@ class User
     /**
      * @var int
      */
-    private $status;
+    private $status = self::STATUS_NORMAL;
 
     /**
      * @var int
      */
-    private $substatus;
+    private $substatus = self::SUBSTATUS_NORMAL;
 
     /**
      * @var string
@@ -32,7 +45,7 @@ class User
     /**
      * @var string
      */
-    private $language;
+    private $language = self::LANGUAGE_ENGLISH;
 
     /**
      * @return string
