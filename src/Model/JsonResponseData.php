@@ -5,36 +5,34 @@ namespace Phpackage\Autodns\Model;
 class JsonResponseData
 {
     /**
-     * @var array
+     * @var array The data for the response
      */
     protected $data = [];
 
     /**
-     * @var string
+     * @var string The server transaction id for the response
      */
     private $stid;
+
     /**
-     * @var string
+     * @var string The client transaction id for the response
      */
     private $ctid;
+
     /**
-     * @var Message[]
+     * @var Message[] The messages belonging to the response
      */
-    private $messages;
+    private $messages = [];
+
     /**
      * @var ResponseStatus
      */
     private $status;
+
     /**
      * @var ResponseObject
      */
     private $object;
-
-    public function __construct()
-    {
-        $this->status = new ResponseStatus();
-        $this->object = new ResponseObject();
-    }
 
     /**
      * @return array
@@ -55,7 +53,7 @@ class JsonResponseData
     /**
      * @return string
      */
-    public function getStid(): string
+    public function getStid(): ?string
     {
         return $this->stid;
     }
@@ -71,7 +69,7 @@ class JsonResponseData
     /**
      * @return string
      */
-    public function getCtid(): string
+    public function getCtid(): ?string
     {
         return $this->ctid;
     }
@@ -111,7 +109,7 @@ class JsonResponseData
     /**
      * @return ResponseStatus
      */
-    public function getStatus(): ResponseStatus
+    public function getStatus(): ?ResponseStatus
     {
         return $this->status;
     }
@@ -127,7 +125,7 @@ class JsonResponseData
     /**
      * @return ResponseObject
      */
-    public function getObject(): ResponseObject
+    public function getObject(): ?ResponseObject
     {
         return $this->object;
     }

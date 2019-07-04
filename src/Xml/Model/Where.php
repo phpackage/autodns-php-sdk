@@ -5,17 +5,17 @@ namespace Phpackage\Autodns\Xml\Model;
 class Where
 {
     /**
-     * @var string
+     * @var string|null
      */
     private $key;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $operator;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $value;
 
