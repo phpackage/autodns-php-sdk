@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpackage\Autodns\Model;
+namespace Phpackage\Autodns\Model\Enum;
 
 interface TimeUnitConstants
 {

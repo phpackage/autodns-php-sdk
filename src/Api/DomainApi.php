@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Api;
 
-use Phpackage\Autodns\Model\JsonResponseDataDomain;
+use Phpackage\Autodns\Model\Response\JsonResponseDataDomain;
 use Phpackage\Autodns\Model\Query;
 
 class DomainApi extends AbstractApi

@@ -1,8 +1,8 @@
 <?php
 
-namespace Phpackage\Autodns\Xml\Model;
+namespace Phpackage\Autodns\Xml\Task;
 
-use Phpackage\Autodns\Xml\Task\Task;
+use Phpackage\Autodns\Xml\Model\Domain;
 
 class DomainInfoTask extends Task
 {

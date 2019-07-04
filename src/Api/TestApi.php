@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Api;
 
-use Phpackage\Autodns\Model\JsonResponseData;
+use Phpackage\Autodns\Model\Response\JsonResponseData;
 
 class TestApi extends AbstractApi
 {

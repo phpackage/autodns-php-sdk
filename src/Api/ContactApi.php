@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Api;
 
-use Phpackage\Autodns\Model\JsonResponseDataContact;
+use Phpackage\Autodns\Model\Response\JsonResponseDataContact;
 use Phpackage\Autodns\Model\Query;
 
 class ContactApi extends AbstractApi

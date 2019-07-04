@@ -1,6 +1,10 @@
 <?php
 
-namespace Phpackage\Autodns\Model;
+namespace Phpackage\Autodns\Model\Response;
+
+use Phpackage\Autodns\Model\Message;
+use Phpackage\Autodns\Model\ResponseObject;
+use Phpackage\Autodns\Model\ResponseStatus;
 
 class JsonResponseData
 {

@@ -1,6 +1,8 @@
 <?php
 
-namespace Phpackage\Autodns\Model;
+namespace Phpackage\Autodns\Model\Response;
+
+use Phpackage\Autodns\Model\Contact;
 
 class JsonResponseDataContact extends JsonResponseData
 {
