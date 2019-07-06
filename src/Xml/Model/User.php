@@ -2,26 +2,8 @@
 
 namespace Phpackage\Autodns\Xml\Model;
 
-class User
+class User extends BasicUser
 {
-    const STATUS_MASTER = 0;
-    const STATUS_ADMIN = 1;
-    const STATUS_NORMAL = 2;
-
-    const SUBSTATUS_PLUS = 0;
-    const SUBSTATUS_STAR = 1;
-    const SUBSTATUS_NORMAL = 2;
-    const SUBSTATUS_CLONE = 3;
-
-    const LANGUAGE_GERMAN = 'de';
-    const LANGUAGE_ENGLISH = 'en';
-    const LANGUAGE_SPANISH = 'es';
-
-    /**
-     * @var string
-     */
-    private $user;
-
     /**
      * @var string
      */
@@ -30,12 +12,12 @@ class User
     /**
      * @var int
      */
-    private $status = self::STATUS_NORMAL;
+    private $status = UserStatusConstants::STATUS_NORMAL;
 
     /**
      * @var int
      */
-    private $substatus = self::SUBSTATUS_NORMAL;
+    private $substatus = UserSubstatusConstants::SUB_STATUS_NORMAL;
 
     /**
      * @var string
@@ -45,23 +27,7 @@ class User
     /**
      * @var string
      */
-    private $language = self::LANGUAGE_ENGLISH;
-
-    /**
-     * @return string
-     */
-    public function getUser(): ?string
-    {
-        return $this->user;
-    }
-
-    /**
-     * @param string $user
-     */
-    public function setUser(string $user): void
-    {
-        $this->user = $user;
-    }
+    private $language = UserLanguageConstants::ENGLISH;
 
     /**
      * @return string
