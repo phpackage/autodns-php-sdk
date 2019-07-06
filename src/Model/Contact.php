@@ -82,26 +82,6 @@ class Contact
     private $sip;
 
     /**
-     * @var string[]
-     */
-    private $remarks;
-
-    /**
-     * @var bool|null
-     */
-    private $domainsafe;
-
-    /**
-     * @var bool|null
-     */
-    private $confirmOwnerConsent;
-
-    /**
-     * @var string|null
-     */
-    private $comment;
-
-    /**
      * @var string|null
      */
     private $verification;
@@ -135,6 +115,11 @@ class Contact
      * @var string|null
      */
     private $fax;
+
+    /**
+     * @var ContactReference[]
+     */
+    private $nicRef = [];
 
     /**
      * @return DateTimeInterface|null
@@ -377,70 +362,6 @@ class Contact
     }
 
     /**
-     * @return string[]
-     */
-    public function getRemarks(): array
-    {
-        return $this->remarks;
-    }
-
-    /**
-     * @param string[] $remarks
-     */
-    public function setRemarks(array $remarks): void
-    {
-        $this->remarks = $remarks;
-    }
-
-    /**
-     * @return bool|null
-     */
-    public function isDomainsafe(): ?bool
-    {
-        return $this->domainsafe;
-    }
-
-    /**
-     * @param bool $domainsafe
-     */
-    public function setDomainsafe(bool $domainsafe): void
-    {
-        $this->domainsafe = $domainsafe;
-    }
-
-    /**
-     * @return bool|null
-     */
-    public function isConfirmOwnerConsent(): ?bool
-    {
-        return $this->confirmOwnerConsent;
-    }
-
-    /**
-     * @param bool $confirmOwnerConsent
-     */
-    public function setConfirmOwnerConsent(bool $confirmOwnerConsent): void
-    {
-        $this->confirmOwnerConsent = $confirmOwnerConsent;
-    }
-
-    /**
-     * @return string|null
-     */
-    public function getComment(): ?string
-    {
-        return $this->comment;
-    }
-
-    /**
-     * @param string $comment
-     */
-    public function setComment(string $comment): void
-    {
-        $this->comment = $comment;
-    }
-
-    /**
      * @return string|null
      */
     public function getVerification(): ?string
@@ -550,5 +471,29 @@ class Contact
     public function setFax(string $fax): void
     {
         $this->fax = $fax;
+    }
+
+    /**
+     * @return ContactReference[]
+     */
+    public function getNicRef(): array
+    {
+        return $this->nicRef;
+    }
+
+    /**
+     * @param ContactReference[] $nicRef
+     */
+    public function setNicRef(array $nicRef): void
+    {
+        $this->nicRef = $nicRef;
+    }
+
+    /**
+     * @param ContactReference $nicRef
+     */
+    public function addNicRef(ContactReference $nicRef): void
+    {
+        $this->nicRef[] = $nicRef;
     }
 }
