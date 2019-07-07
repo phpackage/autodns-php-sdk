@@ -2,6 +2,10 @@
 
 namespace Phpackage\Autodns\Xml\Model;
 
+use Phpackage\Autodns\Xml\Enum\UserLanguageConstants;
+use Phpackage\Autodns\Xml\Enum\UserStatusConstants;
+use Phpackage\Autodns\Xml\Enum\UserSubstatusConstants;
+
 class User extends BasicUser
 {
     /**

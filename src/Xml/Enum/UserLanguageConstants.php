@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpackage\Autodns\Xml\Model;
+namespace Phpackage\Autodns\Xml\Enum;
 
 abstract class UserLanguageConstants
 {
