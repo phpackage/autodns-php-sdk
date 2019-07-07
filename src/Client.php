@@ -68,6 +68,16 @@ class Client
         return $this->session->post($url, null, $data);
     }
 
+    public function put(string $url, $data)
+    {
+        return $this->session->put($url, null, $data);
+    }
+
+    public function delete(string $url)
+    {
+        return $this->session->delete($url);
+    }
+
     public function serialize($data)
     {
         return $this->serializer->serialize($data, JsonEncoder::FORMAT);
