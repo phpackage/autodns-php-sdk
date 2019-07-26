@@ -7,6 +7,7 @@ use Phpackage\Autodns\Api\DomainApi;
 use Phpackage\Autodns\Api\DomainStudioApi;
 use Phpackage\Autodns\Api\TestApi;
 use Phpackage\Autodns\Api\UserApi;
+use Phpackage\Autodns\Api\ZoneApi;
 use Requests_Session;
 use Symfony\Component\PropertyInfo\Extractor\ReflectionExtractor;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
@@ -106,6 +107,11 @@ class Client
     public function domainApi()
     {
         return new DomainApi($this);
+    }
+
+    public function zoneApi()
+    {
+        return new ZoneApi($this);
     }
 
     public function domainStudioApi()
