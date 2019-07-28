@@ -59,6 +59,16 @@ class Client
         ]);
     }
 
+    public function getRequestsSession()
+    {
+        return $this->session;
+    }
+
+    public function getSerializer()
+    {
+        return $this->serializer;
+    }
+
     public function get(string $url)
     {
         return $this->session->get($url);
