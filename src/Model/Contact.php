@@ -99,7 +99,7 @@ class Contact
     /**
      * @var string[]
      */
-    private $address;
+    private $address = [];
 
     /**
      * @var string|null
@@ -132,7 +132,7 @@ class Contact
     /**
      * @param DateTimeInterface $created
      */
-    public function setCreated(DateTimeInterface $created): void
+    public function setCreated(?DateTimeInterface $created): void
     {
         $this->created = $created;
     }
@@ -148,7 +148,7 @@ class Contact
     /**
      * @param DateTimeInterface $updated
      */
-    public function setUpdated(DateTimeInterface $updated): void
+    public function setUpdated(?DateTimeInterface $updated): void
     {
         $this->updated = $updated;
     }
@@ -164,7 +164,7 @@ class Contact
     /**
      * @param int $id
      */
-    public function setId(int $id): void
+    public function setId(?int $id): void
     {
         $this->id = $id;
     }
@@ -180,7 +180,7 @@ class Contact
     /**
      * @param BasicUser $owner
      */
-    public function setOwner(BasicUser $owner): void
+    public function setOwner(?BasicUser $owner): void
     {
         $this->owner = $owner;
     }
@@ -196,7 +196,7 @@ class Contact
     /**
      * @param BasicUser $updater
      */
-    public function setUpdater(BasicUser $updater): void
+    public function setUpdater(?BasicUser $updater): void
     {
         $this->updater = $updater;
     }
@@ -212,7 +212,7 @@ class Contact
     /**
      * @param string $alias
      */
-    public function setAlias(string $alias): void
+    public function setAlias(?string $alias): void
     {
         $this->alias = $alias;
     }
@@ -228,7 +228,7 @@ class Contact
     /**
      * @param string $type
      */
-    public function setType(string $type): void
+    public function setType(?string $type): void
     {
         $this->type = $type;
     }
@@ -244,7 +244,7 @@ class Contact
     /**
      * @param string $organization
      */
-    public function setOrganization(string $organization): void
+    public function setOrganization(?string $organization): void
     {
         $this->organization = $organization;
     }
@@ -260,7 +260,7 @@ class Contact
     /**
      * @param string $title
      */
-    public function setTitle(string $title): void
+    public function setTitle(?string $title): void
     {
         $this->title = $title;
     }
@@ -276,7 +276,7 @@ class Contact
     /**
      * @param string $city
      */
-    public function setCity(string $city): void
+    public function setCity(?string $city): void
     {
         $this->city = $city;
     }
@@ -292,7 +292,7 @@ class Contact
     /**
      * @param string $country
      */
-    public function setCountry(string $country): void
+    public function setCountry(?string $country): void
     {
         $this->country = $country;
     }
@@ -308,7 +308,7 @@ class Contact
     /**
      * @param string $state
      */
-    public function setState(string $state): void
+    public function setState(?string $state): void
     {
         $this->state = $state;
     }
@@ -324,7 +324,7 @@ class Contact
     /**
      * @param string $email
      */
-    public function setEmail(string $email): void
+    public function setEmail(?string $email): void
     {
         $this->email = $email;
     }
@@ -340,7 +340,7 @@ class Contact
     /**
      * @param string $protection
      */
-    public function setProtection(string $protection): void
+    public function setProtection(?string $protection): void
     {
         $this->protection = $protection;
     }
@@ -356,7 +356,7 @@ class Contact
     /**
      * @param string $sip
      */
-    public function setSip(string $sip): void
+    public function setSip(?string $sip): void
     {
         $this->sip = $sip;
     }
@@ -372,7 +372,7 @@ class Contact
     /**
      * @param string $verification
      */
-    public function setVerification(string $verification): void
+    public function setVerification(?string $verification): void
     {
         $this->verification = $verification;
     }
@@ -388,7 +388,7 @@ class Contact
     /**
      * @param string $fname
      */
-    public function setFname(string $fname): void
+    public function setFname(?string $fname): void
     {
         $this->fname = $fname;
     }
@@ -404,7 +404,7 @@ class Contact
     /**
      * @param string $lname
      */
-    public function setLname(string $lname): void
+    public function setLname(?string $lname): void
     {
         $this->lname = $lname;
     }
@@ -426,6 +426,14 @@ class Contact
     }
 
     /**
+     * @param string $address
+     */
+    public function addAddress(string $address): void
+    {
+        $this->address[] = $address;
+    }
+
+    /**
      * @return string|null
      */
     public function getPcode(): ?string
@@ -436,7 +444,7 @@ class Contact
     /**
      * @param string $pcode
      */
-    public function setPcode(string $pcode): void
+    public function setPcode(?string $pcode): void
     {
         $this->pcode = $pcode;
     }
@@ -452,7 +460,7 @@ class Contact
     /**
      * @param string $phone
      */
-    public function setPhone(string $phone): void
+    public function setPhone(?string $phone): void
     {
         $this->phone = $phone;
     }
@@ -468,7 +476,7 @@ class Contact
     /**
      * @param string $fax
      */
-    public function setFax(string $fax): void
+    public function setFax(?string $fax): void
     {
         $this->fax = $fax;
     }
