@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface Operator
+final class Operator
 {
     const EQUAL = 'EQUAL';
     const NOT_EQUAL = 'NOT_EQUAL';
@@ -16,4 +16,8 @@ interface Operator
     const IS_NULL = 'IS_NULL';
     const IS_NOT_NULL = 'IS_NOT_NULL';
     const IN = 'IN';
+
+    private function __construct()
+    {
+    }
 }

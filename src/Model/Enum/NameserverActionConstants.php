@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface NameserverActionConstants
+final class NameserverActionConstants
 {
     const PRIMARY = 'PRIMARY';
     const SECONDARY = 'SECONDARY';
@@ -10,4 +10,8 @@ interface NameserverActionConstants
     const HIDDEN = 'HIDDEN';
     const NONE = 'NONE';
     const AUTO = 'AUTO';
+
+    private function __construct()
+    {
+    }
 }

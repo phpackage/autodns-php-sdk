@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface TimeUnitConstants
+final class TimeUnitConstants
 {
     const MILLISECOND = 'MILLISECOND';
     const SECOND = 'SECOND';
@@ -13,4 +13,8 @@ interface TimeUnitConstants
     const MONTH = 'MONTH';
     const QUARTER = 'QUARTER';
     const YEAR = 'YEAR';
+
+    private function __construct()
+    {
+    }
 }

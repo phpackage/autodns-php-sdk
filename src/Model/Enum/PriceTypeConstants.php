@@ -2,8 +2,12 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-abstract class PriceTypeConstants
+final class PriceTypeConstants
 {
     const GROSS = 'GROSS';
     const NET = 'NET';
+
+    private function __construct()
+    {
+    }
 }

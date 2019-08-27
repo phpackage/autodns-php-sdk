@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface ResourceRecordType
+final class ResourceRecordType
 {
     const A = 'A';
     const MX = 'MX';
@@ -25,4 +25,8 @@ interface ResourceRecordType
     const DNSKEY = 'DNSKEY';
     const NSEC = 'NSEC';
     const DS = 'DS';
+
+    private function __construct()
+    {
+    }
 }

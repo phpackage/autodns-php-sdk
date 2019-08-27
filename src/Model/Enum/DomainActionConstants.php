@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface DomainActionConstants
+final class DomainActionConstants
 {
     const CREATE = 'CREATE';
     const UPDATE = 'UPDATE';
@@ -41,4 +41,8 @@ interface DomainActionConstants
     const AUTHINFO_DELETE = 'AUTHINFO_DELETE';
     const AUTOUPDATE_DEFERRED = 'AUTOUPDATE_DEFERRED';
     const DOMAIN_BUY = 'DOMAIN_BUY';
+
+    private function __construct()
+    {
+    }
 }

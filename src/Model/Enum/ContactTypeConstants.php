@@ -2,9 +2,13 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface ContactTypeConstants
+final class ContactTypeConstants
 {
     const PERSON = 'PERSON';
     const ORG = 'ORG';
     const ROLE = 'ROLE';
+
+    private function __construct()
+    {
+    }
 }

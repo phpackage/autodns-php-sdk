@@ -2,10 +2,14 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-abstract class PriorityConstants
+final class PriorityConstants
 {
     const DEFAULT = 'DEFAULT';
     const OFFER = 'OFFER';
     const PROTECTED = 'PROTECTED';
     const PROMO = 'PROMO';
+
+    private function __construct()
+    {
+    }
 }

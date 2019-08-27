@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface RegistryStatusConstants
+final class RegistryStatusConstants
 {
     const ACTIVE = 'ACTIVE';
     const HOLD = 'HOLD';
@@ -13,4 +13,8 @@ interface RegistryStatusConstants
     const LOCK_UPDATE = 'LOCK_UPDATE';
     const PENDING = 'PENDING';
     const NONE = 'NONE';
+
+    private function __construct()
+    {
+    }
 }

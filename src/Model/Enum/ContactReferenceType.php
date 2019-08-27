@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface ContactReferenceType
+final class ContactReferenceType
 {
     const ALL = 'ALL';
     const OWNERC = 'OWNERC';
@@ -10,4 +10,8 @@ interface ContactReferenceType
     const TECHC = 'TECHC';
     const ZONEC = 'ZONEC';
     const BILLINGC = 'BILLINGC';
+
+    private function __construct()
+    {
+    }
 }

@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-abstract class DomainStudioDomainStatus
+final class DomainStudioDomainStatus
 {
     const FREE = 'FREE';
     const ASSIGNED = 'ASSIGNED';
@@ -11,4 +11,8 @@ abstract class DomainStudioDomainStatus
     const INVALID = 'INVALID';
     const ERROR = 'ERROR';
     const TIMEOUT = 'TIMEOUT';
+
+    private function __construct()
+    {
+    }
 }

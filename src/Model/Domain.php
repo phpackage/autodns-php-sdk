@@ -3,6 +3,7 @@
 namespace Phpackage\Autodns\Model;
 
 use DateTimeInterface;
+use Phpackage\Autodns\Model\Enum\AutoRenewStatusConstants;
 
 class Domain
 {
@@ -143,6 +144,7 @@ class Domain
 
     /**
      * @var string|null
+     * @see AutoRenewStatusConstants
      */
     private $autoRenewStatus;
 

@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface CancelationStatusConstants
+final class CancelationStatusConstants
 {
     const DELETE = 'DELETE';
     const DELETE_EXPIRE = 'DELETE_EXPIRE';
@@ -10,4 +10,8 @@ interface CancelationStatusConstants
     const TRANSIT_EXPIRE = 'TRANSIT_EXPIRE';
     const PREACK = 'PREACK';
     const PREACK_EXPIRE = 'PREACK_EXPIRE';
+
+    private function __construct()
+    {
+    }
 }

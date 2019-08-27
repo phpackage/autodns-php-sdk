@@ -2,8 +2,12 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface OrderType
+final class OrderType
 {
     const DESC = 'DESC';
     const ASC = 'ASC';
+
+    private function __construct()
+    {
+    }
 }

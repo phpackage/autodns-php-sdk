@@ -2,7 +2,7 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-interface ObjectStatus
+final class ObjectStatus
 {
     const SPOOL = 'SPOOL';
     const REQUEST = 'REQUEST';
@@ -12,4 +12,8 @@ interface ObjectStatus
     const SUCCESS = 'SUCCESS';
     const PENDING_DOMAIN = 'PENDING_DOMAIN';
     const CONNECT = 'CONNECT';
+
+    private function __construct()
+    {
+    }
 }

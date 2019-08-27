@@ -2,9 +2,13 @@
 
 namespace Phpackage\Autodns\Model\Enum;
 
-abstract class DomainStudioServiceStatus
+final class DomainStudioServiceStatus
 {
     const RUNNING = 'RUNNING';
     const SUCCESS = 'SUCCESS';
     const FAILED = 'FAILED';
+
+    private function __construct()
+    {
+    }
 }
