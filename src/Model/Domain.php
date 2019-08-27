@@ -142,6 +142,11 @@ class Domain
     private $cancelationStatus;
 
     /**
+     * @var string|null
+     */
+    private $autoRenewStatus;
+
+    /**
      * @return DateTimeInterface|null
      */
     public function getCreated(): ?DateTimeInterface
@@ -579,5 +584,21 @@ class Domain
     public function setCancelationStatus(string $cancelationStatus): void
     {
         $this->cancelationStatus = $cancelationStatus;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getAutoRenewStatus(): ?string
+    {
+        return $this->autoRenewStatus;
+    }
+
+    /**
+     * @param string $autoRenewStatus
+     */
+    public function setAutoRenewStatus(string $autoRenewStatus): void
+    {
+        $this->autoRenewStatus = $autoRenewStatus;
     }
 }
