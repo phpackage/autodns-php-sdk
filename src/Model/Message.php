@@ -2,29 +2,32 @@
 
 namespace Phpackage\Autodns\Model;
 
+use Phpackage\Autodns\Model\Enum\StatusType;
+
 class Message
 {
     /**
-     * @var string
+     * @var string The text
      */
     private $text;
 
     /**
-     * @var Message[]
+     * @var Message[] The messages
      */
     private $messages = [];
 
     /**
-     * @var GenericObject[]
+     * @var GenericObject[] The objects
      */
     private $objects = [];
 
     /**
-     * @var string
+     * @var string The message code
      */
     private $code;
 
     /**
+     * @see StatusType
      * @var string
      */
     private $status;

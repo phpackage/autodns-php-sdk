@@ -5,12 +5,12 @@ namespace Phpackage\Autodns\Model;
 class BasicUser
 {
     /**
-     * @var int|null
+     * @var int|null The context
      */
     private $context;
 
     /**
-     * @var string|null
+     * @var string|null The user name
      */
     private $user;
 

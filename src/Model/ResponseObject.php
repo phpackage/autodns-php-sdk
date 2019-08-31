@@ -5,17 +5,17 @@ namespace Phpackage\Autodns\Model;
 class ResponseObject
 {
     /**
-     * @var string
+     * @var string|null The type of the object
      */
     private $type;
 
     /**
-     * @var string
+     * @var string|null The primary key of the object
      */
     private $value;
 
     /**
-     * @var int
+     * @var int|null The amound of objects found in list tasks
      */
     private $summary;
 

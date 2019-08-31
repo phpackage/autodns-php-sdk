@@ -5,12 +5,12 @@ namespace Phpackage\Autodns\Model;
 class GenericObject
 {
     /**
-     * @var string|null
+     * @var string|null The type of the object
      */
     private $type;
 
     /**
-     * @var string|null
+     * @var string|null The value of the object
      */
     private $value;
 
