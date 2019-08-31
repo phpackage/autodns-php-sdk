@@ -2,9 +2,12 @@
 
 namespace Phpackage\Autodns\Model;
 
+use Phpackage\Autodns\Model\Enum\TimeUnitConstants;
+
 class TimePeriod
 {
     /**
+     * @see TimeUnitConstants
      * @var string|null
      */
     private $unit;
@@ -13,6 +16,20 @@ class TimePeriod
      * @var int|null
      */
     private $period;
+
+    /**
+     * @param string $unit
+     * @param int $period
+     * @return TimePeriod
+     */
+    public static function create(string $unit, int $period)
+    {
+        $self = new self();
+        $self->unit = $unit;
+        $self->period = $period;
+
+        return $self;
+    }
 
     /**
      * @return string|null

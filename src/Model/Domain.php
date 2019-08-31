@@ -4,6 +4,7 @@ namespace Phpackage\Autodns\Model;
 
 use DateTimeInterface;
 use Phpackage\Autodns\Model\Enum\AutoRenewStatusConstants;
+use Phpackage\Autodns\Model\Enum\TimeUnitConstants;
 
 class Domain
 {
@@ -147,6 +148,20 @@ class Domain
      * @see AutoRenewStatusConstants
      */
     private $autoRenewStatus;
+
+    /**
+     * @param string $name
+     * @param int $period
+     * @return Domain
+     */
+    public static function create(string $name, int $period = 1)
+    {
+        $self = new self();
+        $self->name = $name;
+        $self->period = TimePeriod::create(TimeUnitConstants::YEAR, $period);
+
+        return $self;
+    }
 
     /**
      * @return DateTimeInterface|null

@@ -20,6 +20,25 @@ class NameServer
     private $ipAddresses = [];
 
     /**
+     * @param string $name
+     * @param int|null $ttl
+     * @param string|null $ipAddress
+     * @return NameServer
+     */
+    public static function create(string $name, ?int $ttl = null, ?string $ipAddress = null)
+    {
+        $self = new self();
+        $self->name = $name;
+        $self->ttl = $ttl;
+
+        if (isset($ipAddress)) {
+            $self->addIpAddress($ipAddress);
+        }
+
+        return $self;
+    }
+
+    /**
      * @return string|null
      */
     public function getName(): ?string
